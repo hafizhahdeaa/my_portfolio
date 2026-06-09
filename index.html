@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafizhah Dea Az Zahrah - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom styles to match the React selection colors */
+        ::selection {
+            background-color: #83A6CE;
+            color: #0B1B32;
+        }
+    </style>
+</head>
+<body class="bg-[#0B1B32] text-slate-300 font-sans antialiased relative">
+
+    <!-- Background Glow Effects -->
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#0D1E4C] blur-[120px] pointer-events-none opacity-60 z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[30%] h-[30%] rounded-full bg-[#26415E] blur-[100px] pointer-events-none opacity-40 z-0"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0B1B32]/80 backdrop-blur-md border-b border-[#26415E]/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl text-white tracking-tight flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#83A6CE]"></span>
+                Hafizhah Dea Az Zahrah
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-[#83A6CE] transition-colors">About</a>
+                <a href="#expertise" class="hover:text-[#83A6CE] transition-colors">Expertise</a>
+                <a href="#project" class="hover:text-[#83A6CE] transition-colors">Project</a>
+                <a href="#experience" class="hover:text-[#83A6CE] transition-colors">Experience</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium bg-transparent border border-[#83A6CE] text-[#83A6CE] rounded-full hover:bg-[#83A6CE] hover:text-[#0B1B32] transition-all">
+                Let's Connect
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="relative z-10 pt-20">
+        
+        <!-- Hero Section -->
+        <section class="py-20 px-6 max-w-7xl mx-auto flex flex-col justify-center min-h-[90vh]">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#26415E]/30 border border-[#26415E] text-[#83A6CE] text-xs font-semibold tracking-wider uppercase w-fit mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#C48CB3] animate-pulse"></span>
+                Available for Opportunities
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-4xl">
+                Merancang Solusi Digital dengan <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#83A6CE] to-[#C48CB3]">Analisis Terstruktur</span> & Strategi Bisnis.
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-[#83A6CE] font-medium mb-4">
+                Business Intelligence Enthusiast • Business Analyst • Product Thinker
+            </p>
+            
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed mb-10">
+                Saya memadukan objektif bisnis, kebutuhan pengguna, dan teknologi melalui <i>structured analysis</i>, <i>process improvement</i>, pemikiran berbasis data, dan desain yang berpusat pada pengguna.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="#project" class="inline-flex items-center gap-2 bg-white text-[#0B1B32] px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+                    View Project <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#contact" class="inline-flex items-center gap-2 bg-transparent text-white border border-[#26415E] px-6 py-3 rounded-full font-semibold hover:bg-[#26415E]/50 transition-colors">
+                    Let's Connect
+                </a>
+            </div>
+        </section>
+
+        <!-- Metrics Snapshot -->
+        <section class="px-6 pb-20 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Metric 1 -->
+                <div class="bg-[#0D1E4C]/40 border border-[#26415E]/50 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden group hover:border-[#83A6CE]/50 transition-colors">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="target" class="w-16 h-16 text-[#83A6CE]"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">10+</div>
+                    <div class="text-lg font-semibold text-[#83A6CE] mb-2">Projects Completed</div>
+                    <div class="text-sm text-slate-400">Dari tahap analisis hingga desain antarmuka.</div>
+                </div>
+                <!-- Metric 2 -->
+                <div class="bg-[#0D1E4C]/40 border border-[#26415E]/50 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden group hover:border-[#83A6CE]/50 transition-colors">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="target" class="w-16 h-16 text-[#83A6CE]"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">15+</div>
+                    <div class="text-lg font-semibold text-[#83A6CE] mb-2">UML Diagrams</div>
+                    <div class="text-sm text-slate-400">Memetakan proses bisnis & arsitektur sistem.</div>
+                </div>
+                <!-- Metric 3 -->
+                <div class="bg-[#0D1E4C]/40 border border-[#26415E]/50 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden group hover:border-[#83A6CE]/50 transition-colors">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i data-lucide="target" class="w-16 h-16 text-[#83A6CE]"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">30+</div>
+                    <div class="text-lg font-semibold text-[#83A6CE] mb-2">UI Screens</div>
+                    <div class="text-sm text-slate-400">Desain purwarupa interaktif dan berpusat pada pengguna.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-[#0D1E4C]/20 border-y border-[#26415E]/30">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-5">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Menerjemahkan Kompleksitas Menjadi Kejelasan.</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Sebagai Mahasiswa Sistem Informasi di Universitas Bakrie dengan pencapaian akademis yang kuat (GPA 3.86/4.00), saya fokus pada titik temu antara efisiensi operasional dan inovasi digital. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Saya tidak sekadar mendesain antarmuka; saya menganalisis sistem secara menyeluruh. Dari memodelkan proses bisnis hingga merancang arsitektur data dan melakukan validasi kualitas (QA), pendekatan saya selalu berorientasi pada <i>business value</i> dan penyelesaian masalah.
+                    </p>
+                </div>
+                <div class="lg:col-span-7 bg-[#0B1B32] border border-[#26415E] rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i data-lucide="target" class="w-6 h-6 text-[#C48CB3]"></i> Areas of Interest
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">Business Analysis</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">ERP Analysis</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">Product Strategy</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">Business Intelligence</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">UI/UX Design</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">Quality Assurance</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#0D1E4C]/50 border border-[#26415E]/50 rounded-lg p-4">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#83A6CE]"></i><span class="font-medium text-slate-200">Digital Transformation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-sm font-bold tracking-widest text-[#83A6CE] uppercase mb-2">Core Competencies</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">Technical & Strategic Expertise</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill 1 -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="mb-6 bg-[#0B1B32] w-14 h-14 rounded-xl flex items-center justify-center border border-[#26415E]">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-[#83A6CE]"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Business Analysis</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Requirement Gathering</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Business Process Mapping</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">UML</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">BPMN</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Documentation</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="mb-6 bg-[#0B1B32] w-14 h-14 rounded-xl flex items-center justify-center border border-[#26415E]">
+                        <i data-lucide="database" class="w-7 h-7 text-[#C48CB3]"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Data Analytics & BI</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">SQL</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Python</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Tableau</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Power BI</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Pentaho</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="mb-6 bg-[#0B1B32] w-14 h-14 rounded-xl flex items-center justify-center border border-[#26415E]">
+                        <i data-lucide="layout" class="w-7 h-7 text-[#E5C9D7]"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">UI/UX Design</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">User Flow</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Wireframing</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Prototyping</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Information Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="mb-6 bg-[#0B1B32] w-14 h-14 rounded-xl flex items-center justify-center border border-[#26415E]">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-[#83A6CE]"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Quality Assurance</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Functional Testing</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Validation</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Test Scenario</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">UAT Thinking</span>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="mb-6 bg-[#0B1B32] w-14 h-14 rounded-xl flex items-center justify-center border border-[#26415E]">
+                        <i data-lucide="target" class="w-7 h-7 text-[#C48CB3]"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Business Strategy</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Business Model Canvas</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Customer Journey Mapping</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Market Analysis</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-[#26415E]/30 text-slate-300 rounded-full border border-[#26415E]/50">Value Proposition</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Framework Section -->
+        <section class="py-24 bg-[#0D1E4C]/20 border-y border-[#26415E]/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <h2 class="text-sm font-bold tracking-widest text-[#83A6CE] uppercase mb-2">Methodology</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Project Approach Framework</h3>
+                    <p class="text-slate-400 mt-4">Pendekatan terstruktur yang saya terapkan pada setiap inisiatif proyek untuk memastikan solusi yang tepat sasaran.</p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center relative">
+                    <div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-[#26415E] -z-10"></div>
+                    
+                    <!-- Steps 1-7 -->
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">1</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Understand Context</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Menganalisis latar belakang masalah dan tujuan bisnis.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Menganalisis latar belakang masalah dan tujuan bisnis.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">2</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Identify Problems</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Menemukan pain points pada sistem atau proses saat ini.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Menemukan pain points pada sistem atau proses saat ini.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">3</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Analyze Requirements</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Melakukan requirement gathering dengan stakeholders.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Melakukan requirement gathering dengan stakeholders.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">4</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Model Processes</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Membuat visualisasi UML & BPMN untuk kejelasan sistem.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Membuat visualisasi UML & BPMN untuk kejelasan sistem.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">5</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Design Solutions</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Merancang UI/UX dan arsitektur solusi digital.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Merancang UI/UX dan arsitektur solusi digital.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">6</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Validate & Test</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Menyusun skenario UAT dan functional testing.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Menyusun skenario UAT dan functional testing.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center w-full lg:w-40 relative group">
+                        <div class="w-10 h-10 rounded-full bg-[#0B1B32] border-2 border-[#83A6CE] flex items-center justify-center font-bold text-[#83A6CE] mb-4 z-10 group-hover:bg-[#83A6CE] group-hover:text-[#0B1B32] transition-colors">7</div>
+                        <h4 class="text-sm font-bold text-white mb-2">Deliver Outcomes</h4>
+                        <p class="text-xs text-slate-400 px-2 opacity-0 lg:group-hover:opacity-100 transition-opacity absolute top-full mt-2 bg-[#0B1B32] border border-[#26415E] p-2 rounded w-48 shadow-xl z-20 pointer-events-none">Menghasilkan output yang selaras dengan business value.</p>
+                        <p class="text-xs text-slate-400 px-2 lg:hidden">Menghasilkan output yang selaras dengan business value.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project" class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="mb-16 md:flex justify-between items-end border-b border-[#26415E]/50 pb-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-sm font-bold tracking-widest text-[#83A6CE] uppercase mb-2">Selected Works</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Business & Technical Projects</h3>
+                </div>
+                <p class="text-slate-400 mt-4 md:mt-0 text-sm max-w-xs md:text-right">Proyek berikut mendemonstrasikan kemampuan analitis dan implementasi solusi end-to-end.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">Mymoovie</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">System Architecture & UI/UX Design</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Digitalisasi sistem pemesanan pada industri bioskop untuk meningkatkan efisiensi antrean.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Merancang arsitektur sistem secara komprehensif mulai dari pembuatan UML diagrams (Use Case, Activity, Class) hingga mendesain High-Fidelity UI pada Figma. Fokus pada alur pemesanan tiket yang seamless.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">UML</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Figma</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">User Flow</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Wireframing</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">System Analyst & UI/UX Designer</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#26415E] to-[#0D1E4C] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">Moovio</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Product Design & Prototyping</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Tingginya permintaan akan platform hiburan on-demand dengan personalisasi pengguna.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Merancang ekosistem aplikasi streaming film. Mendefinisikan arsitektur informasi, merancang alur pengguna (user flow), dan membangun purwarupa (prototype) antarmuka yang intuitif dan modern.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">UI/UX Design</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Prototyping</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Information Architecture</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">Product Designer</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">Bookit Bakrie</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Business Process & System Design</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Inefisiensi dan redudansi data dalam proses peminjaman ruangan secara manual di Universitas Bakrie.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Membangun konsep sistem reservasi ruangan online terintegrasi. Mengembangkan pemodelan proses bisnis, diagram UML untuk backend, serta mendesain UI/UX yang mempermudah proses approval oleh admin.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">BPMN</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">UML</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">UI/UX Design</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">System Documentation</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">Business Analyst</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#0B1B32] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">Vrooms</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Software Development</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Kebutuhan digitalisasi pencatatan dan manajemen armada pada bisnis rental mobil.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Mengembangkan aplikasi manajemen peminjaman/rental mobil berbasis desktop menggunakan bahasa pemrograman Java. Berfokus pada implementasi logika bisnis, manajemen inventaris, dan validasi data penyewa.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Java</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">OOP</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Database Management</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Backend Logic</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">Java Developer</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#26415E] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">ForthicX</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Business Strategy & Technology Service</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Peluang pasar pada kebutuhan digitalisasi UMKM dan korporat menengah.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Menginisiasi proyek pembangunan bisnis tech-agency. Merancang Business Model Canvas (BMC), menentukan value proposition, dan menyusun strategi layanan jasa desain aplikasi & sistem IT.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Business Model Canvas</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Strategy</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Tech Consulting</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">Business Strategist / Founder</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
+                        <h4 class="text-2xl font-bold text-white">WebGIS Dashboard</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Data Visualization & Spatial Analysis</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Kebutuhan visualisasi data tata ruang kota untuk analisis aksesibilitas fasilitas publik.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Mengembangkan dasbor WebGIS dan peta statis yang memetakan persebaran stasiun transportasi umum (MBTA) dan lokasi universitas di kota Boston, mendukung pengambilan keputusan berbasis lokasi.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">WebGIS</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Data Visualization</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Spatial Analysis</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Mapping</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">GIS Analyst</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 bg-[#0D1E4C]/20 border-y border-[#26415E]/30">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold tracking-widest text-[#83A6CE] uppercase mb-2">Professional Journey</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Experience & Leadership</h3>
+                </div>
+
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-[#26415E] before:to-transparent">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#0B1B32] text-[#83A6CE] shadow shrink-0 md:order-1 md:-translate-x-1/2 z-10">
+                            <i data-lucide="monitor-smartphone" class="w-4 h-4"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#0B1B32] p-6 rounded-2xl border border-[#26415E] shadow-xl">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h4 class="font-bold text-white text-lg">ERP Analyst Intern</h4>
+                            </div>
+                            <p class="text-sm text-slate-400 mb-3">Memahami proses bisnis perusahaan dan membantu implementasi sistem Enterprise Resource Planning (ERP). Berkolaborasi dengan stakeholder untuk memastikan kapabilitas sistem memenuhi kebutuhan operasional.</p>
+                            <span class="text-xs font-semibold text-[#C48CB3] bg-[#C48CB3]/10 px-2 py-1 rounded inline-block">Process Mapping & Implementation</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative flex items-center justify-between md:justify-normal group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#0B1B32] text-[#83A6CE] shadow shrink-0 md:order-1 md:translate-x-1/2 z-10">
+                            <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#0B1B32] p-6 rounded-2xl border border-[#26415E] shadow-xl">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h4 class="font-bold text-white text-lg">Teaching Assistant</h4>
+                            </div>
+                            <p class="text-sm text-slate-400 mb-3">Membimbing mahasiswa dalam memahami konsep teknis dan praktikal. Mengasah kemampuan komunikasi teknis kompleks menjadi penjelasan yang mudah dipahami.</p>
+                             <span class="text-xs font-semibold text-[#83A6CE] bg-[#83A6CE]/10 px-2 py-1 rounded inline-block">Mentorship & Communication</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#0B1B32] text-[#83A6CE] shadow shrink-0 md:order-1 md:-translate-x-1/2 z-10">
+                            <i data-lucide="award" class="w-4 h-4"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#0B1B32] p-6 rounded-2xl border border-[#26415E] shadow-xl">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h4 class="font-bold text-white text-lg">Vice Treasurer</h4>
+                                <span class="text-xs text-[#83A6CE] font-medium mt-1 sm:mt-0">IEEE Student Branch</span>
+                            </div>
+                            <p class="text-sm text-slate-400 mb-3">Mengelola administrasi keuangan dan pendanaan kegiatan organisasi. Melatih ketelitian, transparansi, dan tata kelola yang baik dalam lingkungan tim kolaboratif.</p>
+                             <span class="text-xs font-semibold text-[#E5C9D7] bg-[#E5C9D7]/10 px-2 py-1 rounded inline-block">Leadership & Management</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials Section -->
+        <section class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Certification -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 flex gap-6">
+                    <div class="mt-1">
+                        <i data-lucide="file-badge" class="w-10 h-10 text-[#83A6CE]"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xs font-bold tracking-widest text-[#83A6CE] uppercase mb-1">Professional Certification</h2>
+                        <h3 class="text-2xl font-bold text-white mb-2">Business Intelligence</h3>
+                        <p class="text-sm text-slate-400 mb-4">Sertifikasi profesional yang memvalidasi kompetensi dalam analisis data, pemodelan informasi, dan perancangan dasbor intelijen bisnis.</p>
+                        <div class="flex items-center gap-4 text-sm font-medium">
+                            <span class="bg-[#26415E] text-white px-3 py-1 rounded">Issued by: BNSP</span>
+                            <span class="text-slate-500">Year: 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IP -->
+                <div class="bg-[#0D1E4C]/30 border border-[#26415E] rounded-2xl p-8 flex gap-6">
+                    <div class="mt-1">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-[#C48CB3]"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xs font-bold tracking-widest text-[#C48CB3] uppercase mb-1">Intellectual Property</h2>
+                        <h3 class="text-2xl font-bold text-white mb-2">VROOM</h3>
+                        <p class="text-sm text-slate-400 mb-4">Pencatatan Hak Cipta resmi sebagai bukti kepemilikan dan inovasi dalam pengembangan aplikasi perangkat lunak.</p>
+                        <div class="flex flex-col gap-2 text-sm font-medium text-slate-300">
+                            <span>App Number: <span class="font-mono text-white bg-[#0B1B32] px-2 py-0.5 rounded border border-[#26415E]">EC002026024837</span></span>
+                            <span class="text-slate-500">Year: 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-[#0B1B32] border-t border-[#26415E]/50 relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#0D1E4C] rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
+            
+            <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Let's Connect</h2>
+                <p class="text-lg text-slate-400 leading-relaxed mb-10">
+                    Saya selalu tertarik untuk berdiskusi mengenai <i>business analysis</i>, produk digital, <i>process improvement</i>, pengambilan keputusan berbasis data, dan solusi berbasis teknologi. 
+                    <br><br>
+                    Baik itu untuk peluang profesional, kolaborasi riset, atau sekadar bertukar perspektif, saya akan dengan senang hati terhubung dengan Anda.
+                </p>
+                
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <!-- EDIT URL DI SINI -->
+                    <a href="mailto:zahrahzraa@gmail.com" class="flex items-center gap-2 bg-white text-[#0B1B32] px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Email Me
+                    </a>
+                    
+                    <!-- EDIT URL DI SINI -->
+                    <a href="https://www.linkedin.com/in/hafizhahdeaa/" target="_blank" rel="noreferrer" class="flex items-center gap-2 bg-[#0D1E4C] border border-[#26415E] text-white px-6 py-3 rounded-full font-bold hover:bg-[#26415E]/50 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn
+                    </a>
+                    
+                    <!-- EDIT URL DI SINI -->
+                    <a href="https://github.com/hafizhahdeaa" target="_blank" rel="noreferrer" class="flex items-center gap-2 bg-[#0D1E4C] border border-[#26415E] text-white px-6 py-3 rounded-full font-bold hover:bg-[#26415E]/50 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub
+                    </a>
+                </div>
+
+                <div class="mt-12">
+                    <button disabled class="flex items-center gap-2 mx-auto text-sm text-slate-500 font-medium cursor-not-allowed">
+                        <i data-lucide="download" class="w-4 h-4"></i> Portfolio PDF (Coming Soon)
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-[#0B1B32] py-8 border-t border-[#26415E] text-center text-slate-500 text-sm">
+        <p>&copy; <span id="year"></span> Hafizhah Dea Az Zahrah. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to Initialize Icons & Dynamic Year -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
