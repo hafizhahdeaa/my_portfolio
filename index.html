@@ -29,7 +29,7 @@
     <nav class="fixed top-0 w-full z-50 bg-[#0B1B32]/80 backdrop-blur-md border-b border-[#26415E]/50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl text-white tracking-tight flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-[#83A6CE]"></span>
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg text-[#0B1B32] font-bold text-lg bg-gradient-to-br from-[#C48CB3] to-[#83A6CE]">H</span>
                 Hafizhah Dea Az Zahrah
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium">
@@ -48,7 +48,9 @@
     <main class="relative z-10 pt-20">
         
         <!-- Hero Section -->
-        <section class="py-20 px-6 max-w-7xl mx-auto flex flex-col justify-center min-h-[90vh]">
+        <section class="pt-4 pb-20 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#26415E]/30 border border-[#26415E] text-[#83A6CE] text-xs font-semibold tracking-wider uppercase w-fit mb-8">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#C48CB3] animate-pulse"></span>
                 Available for Opportunities
@@ -73,6 +75,22 @@
                 <a href="#contact" class="inline-flex items-center gap-2 bg-transparent text-white border border-[#26415E] px-6 py-3 rounded-full font-semibold hover:bg-[#26415E]/50 transition-colors">
                     Let's Connect
                 </a>
+            </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center lg:justify-end lg:pr-6">
+                <div class="relative">
+                    <div class="absolute -inset-3 bg-gradient-to-tr from-[#C48CB3]/25 to-[#83A6CE]/15 blur-2xl rounded-full pointer-events-none"></div>
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border border-[#26415E] bg-[#0D1E4C]/40">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center px-6">
+                            <i data-lucide="user" class="w-12 h-12 text-[#83A6CE]/70"></i>
+                            <span class="text-sm font-medium text-[#83A6CE]">Tambahkan foto kamu</span>
+                            <span class="text-xs text-slate-500">images/hafizhah.jpg</span>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto diri kamu (mis. images/hafizhah.jpg). Jika belum ada, placeholder tetap tampil. -->
+                        <img src="images/hafizhah.jpg" alt="Hafizhah Dea Az Zahrah" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -315,8 +333,14 @@
                 
                 <!-- Project 1 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">Mymoovie</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek Mymoovie (mis. images/mymoovie.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/mymoovie.png" alt="Mymoovie — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">Mymoovie</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">System Architecture & UI/UX Design</div>
@@ -344,8 +368,14 @@
 
                 <!-- Project 2 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#26415E] to-[#0D1E4C] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">Moovio</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#26415E] to-[#0D1E4C] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek Moovio (mis. images/moovio.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/moovio.png" alt="Moovio — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">Moovio</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Product Design & Prototyping</div>
@@ -372,8 +402,14 @@
 
                 <!-- Project 3 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">Bookit Bakrie</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#0D1E4C] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek Bookit Bakrie (mis. images/bookit-bakrie.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/bookit-bakrie.png" alt="Bookit Bakrie — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">Bookit Bakrie</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Business Process & System Design</div>
@@ -401,8 +437,14 @@
 
                 <!-- Project 4 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#0B1B32] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">Vrooms</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#0B1B32] to-[#26415E] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek Vrooms (mis. images/vrooms.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/vrooms.png" alt="Vrooms — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">Vrooms</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Software Development</div>
@@ -430,8 +472,14 @@
 
                 <!-- Project 5 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#26415E] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">ForthicX</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#26415E] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek ForthicX (mis. images/forthicx.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/forthicx.png" alt="ForthicX — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">ForthicX</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Business Strategy & Technology Service</div>
@@ -458,8 +506,14 @@
 
                 <!-- Project 6 -->
                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-32 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E]">
-                        <h4 class="text-2xl font-bold text-white">WebGIS Dashboard</h4>
+                    <div class="relative h-48 bg-gradient-to-br from-[#0D1E4C] to-[#26415E] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek WebGIS Dashboard (mis. images/webgis-dashboard.png). Jika belum ada, gradien tetap tampil. -->
+                        <img src="images/webgis-dashboard.png" alt="WebGIS Dashboard — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">WebGIS Dashboard</h4>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Data Visualization & Spatial Analysis</div>
@@ -477,6 +531,76 @@
                                 <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Data Visualization</span>
                                 <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Spatial Analysis</span>
                                 <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Mapping</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">GIS Analyst</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="relative h-48 bg-gradient-to-br from-[#26415E] to-[#0D1E4C] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek Fluid (mis. images/fluid.png) -->
+                        <img src="images/fluid.png" alt="Fluid — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">Fluid</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">AI Chatbot & Conversational Commerce</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Pelanggan restoran sering kesulitan menjelajahi menu dan menentukan pilihan, sementara restoran butuh cara yang lebih interaktif dan personal untuk membantu proses pemesanan.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Merancang Fluid, aplikasi pemesanan makanan berbasis AI chatbot yang dapat diintegrasikan ke web menu restoran mana pun (white-label). Pelanggan bisa berinteraksi secara natural — bertanya seputar menu hingga mendapatkan rekomendasi berdasarkan preferensi, kebutuhan, maupun suasana hati.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">AI Chatbot</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Conversational UX</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Product Design</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Recommendation System</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-slate-400">Role: <strong class="text-white font-medium">Product Thinker & UI/UX Designer</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                 <div class="group bg-[#0B1B32] border border-[#26415E] rounded-2xl overflow-hidden hover:border-[#83A6CE]/70 transition-all duration-300 flex flex-col h-full">
+                    <div class="relative h-48 bg-gradient-to-br from-[#0D1E4C] to-[#0B1B32] flex items-end p-6 border-b border-[#26415E] overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center text-[#83A6CE]/70">
+                            <div class="flex items-center gap-2 text-xs font-medium"><i data-lucide="image" class="w-4 h-4"></i> Tambahkan foto bukti</div>
+                        </div>
+                        <!-- GANTI FOTO: ganti src ke foto bukti projek WebGIS Cirebon (mis. images/webgis-cirebon.png) -->
+                        <img src="images/webgis-cirebon.png" alt="WebGIS Cirebon — bukti projek" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B32] via-[#0B1B32]/50 to-transparent"></div>
+                        <h4 class="relative text-2xl font-bold text-white">WebGIS Cirebon</h4>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-xs font-bold tracking-wider text-[#C48CB3] uppercase mb-4">Geospatial Analysis & Public Health</div>
+                        <div class="mb-4">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Context / Problem</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Kebutuhan untuk memahami sebaran dan aksesibilitas fasilitas kesehatan di Kota Cirebon sebagai dasar analisis cakupan layanan publik.</p>
+                        </div>
+                        <div class="mb-6 flex-1">
+                            <span class="text-slate-500 text-sm font-medium block mb-1">Approach & Solution</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">Mengembangkan WebGIS yang memetakan persebaran fasilitas layanan kesehatan di Kota Cirebon — rumah sakit, klinik, apotek, hingga praktik dokter gigi — untuk menganalisis aksesibilitas dan cakupan layanan, serta mendukung pengambilan keputusan berbasis lokasi.</p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-[#26415E]/50">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">WebGIS</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Spatial Analysis</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Healthcare</span>
+                                <span class="text-[10px] font-semibold px-2 py-1 bg-[#0D1E4C] text-[#83A6CE] rounded uppercase tracking-wider">Data Visualization</span>
                             </div>
                             <div class="flex items-center justify-between text-sm">
                                 <span class="text-slate-400">Role: <strong class="text-white font-medium">GIS Analyst</strong></span>
